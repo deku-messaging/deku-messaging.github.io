@@ -1,65 +1,15 @@
-
-// $(document).ready(function(){
-// 	$(window).scroll(function(){
-// 		var scroll = $(window).scrollTop();
-// 		if (scroll > 300) {
-// 		  $(".navbar").css("background" , "blue");
-// 		}
+function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
   
-// 		else{
-// 			$(".navbar").css("background" , "#333");  	
-// 		}
-// 	})
-//   })
-
-// (function($) { "use strict";
-
-// 	$(function() {
-// 		var header = $(".start-style");
-// 		$(window).scroll(function() {    
-// 			var scroll = $(window).scrollTop();
-		
-// 			if (scroll >= 10) {
-// 				header.removeClass('start-style').addClass("scroll-on");
-// 			} else {
-// 				header.removeClass("scroll-on").addClass('start-style');
-// 			}
-// 		});
-// 	});		
-		
-// 	//Animation
-	
-// 	$(document).ready(function() {
-// 		$('body.hero-anime').removeClass('hero-anime');
-// 	});
-
-// 	//Menu On Hover
-		
-// 	$('body').on('mouseenter mouseleave','.nav-item',function(e){
-// 			if ($(window).width() > 750) {
-// 				var _d=$(e.target).closest('.nav-item');_d.addClass('show');
-// 				setTimeout(function(){
-// 				_d[_d.is(':hover')?'addClass':'removeClass']('show');
-// 				},1);
-// 			}
-// 	});	
-	
-// 	//Switch light/dark
-	
-// 	$("#switch").on('click', function () {
-// 		if ($("body").hasClass("dark")) {
-// 			$("body").removeClass("dark");
-// 			$("#switch").removeClass("switched");
-// 		}
-// 		else {
-// 			$("body").addClass("dark");
-// 			$("#switch").addClass("switched");
-// 		}
-// 	});  
-	
-//   })(jQuery); 
-
-
-
-
-
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }

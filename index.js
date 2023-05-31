@@ -1,14 +1,22 @@
 var storeButton = document.getElementById('playstore');
-storeButton.style.backgroundColor = 'white';
+storeButton.style.backgroundColor = '#8696FE';
 
-// trigger this function every time the user scrolls
-window.onscroll = function (event) {
-    var scroll = window.pageYOffset;
-    if (scroll < 100) {
-        storeButton.style.backgroundColor = 'white';
-    } else if (scroll >= 100 && scroll < 400) {
-        storeButton.style.backgroundColor = 'orange';
-    } else if (scroll >= 400 && scroll < 1200) {
-        storeButton.style.backgroundColor = 'orange';
-} 
+//Global variables
+var element;
+
+//Scroller Nav
+window.onscroll = function() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        $("header").css("background-color","#8696FE") ;
+        $("header").css("box-shadow","0px 6px 16px -6px black") ;
+        $(".google_play").children("strong").hide("slow");
+        $(".google_play").children("img").css("margin-right","5px");
+    } else {
+        $("header").css("background-color","transparent") ;
+        $("header").css("box-shadow","0px 0px 0px 0px black") ;
+        $(".google_play").children("strong").show("slow");
+        $(".google_play").children("img").css("margin-right","10px");
     }
+}
+
+

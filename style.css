@@ -17,112 +17,368 @@ html {
 	  font-size: 3rem;
   }
   
-  /*============ Navigation ===========*/
-  .navbar{
-    background-color: white;
-    color:#0B2447 !important;
-    font-weight: 550 !important;
-    border-top: 4px solid rgb(46, 96, 146);
-    border-bottom: 2px solid rgb(46, 96, 146);
-  }
-  .nav-item a{
-    color: #0B2447 !important;
-  }
-  .nav-item a:hover{
-    border-bottom: 2px solid #278d9f;
-    padding-bottom: 4px;
-    color: #9ea020 !important; 
-   }
-
-  .nav-item {
-    padding-left: 10px;
-  }
-  .navbar-brand{
-    color: #fff !important;
-    padding-left: 0px;
-  }
-
-  #navbar button{
-    color: #fff !important;
-  }
-/* ==============END OF NAVBAR ================ */
 
 
-/*=============== Main Section============== */
-  .carousel-item {
-	  padding: 7% 15%;
-  }
-  .carousel-item h4 {
-	  font-size: 2rem;
-    color: rgb(235, 245, 245);
-  }
-  .one{
-    padding-bottom: 50px;
-  }
-  .un{
-    padding-left: 20px;
-  }
 
-  #main {
-	  background-color: white;
-	  height: 680px;
-    background-color: #0B2447;
-    color: #fff !important;
-    padding-top: 80px;
-    padding-bottom: 80px;
-  } 
 
-  .header-main {
-	  margin-top: 30px;
-  }
 
-  .header-info {
-   font-size: 4rem;
-   font-weight: 400;
-   background-image: linear-gradient(to right, #a6d1f4, white,#9cc2f5);
-   color: transparent;
-   background-clip: text;
-   -webkit-background-clip: text;
-   text-align: center;
-  }
 
-  .btn-outline-light {
-	  margin-left: 20px;
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+#header.header-transparent {
+  background: transparent;
+  background-color: white;
+}
+
+#header .logo img {
+  margin: 0;
+  max-height: 40px;
+} 
+
   
-  .btn-space {
-	  margin-top: 20px;
-  }
-  .btn {
-    border-bottom: 2px solid #ebe70d;
-    padding-bottom: 4px;
-    letter-spacing: 1.5px;
-    font-size: 18px;
-    background-color:white;
-    color: #19376D !important;
-    font-weight: 700 !important;
-    margin-left: 50px;
-}
-.btn:hover{
-  color: 576CBC !important;
-  border-bottom:3px solid rgb(165, 10, 31);
-  font-weight: 300px;
-}
- 
-.deku{
-  width: 700px;
-  height: 550px;
+header figure{
+  right:0;
+  display:none;
+  margin: 10px;
+  padding: 5px;
 }
 
-/* ==============Image section of the main================ */
-.Phone1 {
-transform: rotate(20deg);
-height: auto;
-width: 320px;
-display: block;
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
 }
-/* =============END OF SECTION STYLING ============== */
- 
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  color: #47536e;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover{
+  color: #09152f;
+}
+
+.navbar .getstarted,
+.navbar .getstarted:focus {
+  background: #042264;
+  color: #fff;
+  padding: 12px 25px;
+  margin-left: 30px;
+  color: #fff;
+  line-height: 1;
+  border-radius: 50px;
+}
+
+.navbar .getstarted:hover,
+.navbar .getstarted:focus:hover {
+  color: #042264;
+  background-color: #ede4e4;
+  border: 2px solid #042264 !important;
+  font-weight: 400;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 140px 0 100px 0;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  right: -100%;
+  top: 20%;
+  width: 250%;
+  height: 200%;
+  z-index: -1;
+  background-color: #e8ecf5;
+  transform: skewY(135deg);
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  color: #5777ba;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero h2 {
+  color: #515f7d;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+#hero .download-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  display: inline-block !important;
+  padding: 8px 24px 10px 46px;
+  border-radius: 15px;
+  transition: 0.5s;
+  color: #fff;
+  background: #47536e;
+  position: relative;
+}
+
+#hero .download-btn:hover {
+  background: #5777ba;
+}
+
+#hero .download-btn i {
+  font-size: 20px;
+  position: absolute;
+  left: 18px;
+  top: 8.5px;
+}
+
+#hero .download-btn+.download-btn {
+  margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+  #hero {
+    text-align: center;
+  }
+
+  #hero .download-btn+.download-btn {
+    margin: 0 10px;
+
+  }
+
+  #hero .hero-img {
+    text-align: center;
+  }
+
+  #hero .hero-img img {
+    width: 60%;
+  }
+  #hero .download-btn {
+    display: block;
+    padding: 8px;
+    border-radius: 15px;
+    transition: 0.5s;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #hero .hero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f2f5fa;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #5777ba;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*========= products============ */
 #Work{

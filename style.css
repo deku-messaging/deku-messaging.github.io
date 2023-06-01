@@ -315,6 +315,11 @@ footer .social-media .links a:hover {
 
   /* =========== Media Queries ================= */
   @media only screen and (max-width: 768px) {
+
+      #playstore h6, h2{
+        font-size: 8px;
+      }
+    
     #main {
       height: 800px;
      padding-bottom: 0;
@@ -362,9 +367,9 @@ footer .social-media .links a:hover {
       font-size: 1.4rem;
     }
     .google_play{
-      bottom:0.4rem;
-      right:0.8rem;
-      padding:0.4rem;
+      bottom:1.4rem;
+      right:1.8rem;
+      padding:2px;
     } 
     .google_play h6, .google_play h3{
       font-size: 10px;
@@ -375,4 +380,12 @@ footer .social-media .links a:hover {
     .hide {
       display: none !important;
     }
+    #playstore h6{
+      font-size: 8px !important;
+      display: fit-content;
+    }
+    #playstore h2{
+      font-size: 15px;
+    }
+  
   }

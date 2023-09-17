@@ -24,13 +24,7 @@ const Headers = () => {
               Learn more &darr;
             </a>
           </div>
-          {/* <div className="hero-img-box">
-            <img
-              src="https://prayagtandon.github.io/Omnifood-Project/Hero-section/img/hero.png"
-              alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-              className="hero-img"
-            />
-          </div> */}
+          
       
         </div>
       </section>

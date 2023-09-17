@@ -44,7 +44,7 @@ Make sure you have the following software installed on your system:
 
 1. Clone the repository: `git clone https://github.com/deku-messaging/deku-messaging.github.io.git`
 2. Navigate to the project folder: `cd deku-messaging.github.io`
-3. Install dependencies: `npm install`
+3. Install dependencies: `npm install` or `yarn`
 
 ## Usage
 
@@ -55,7 +55,7 @@ Visit the locally hosted website to explore the information about the Deku SMS a
 
 If you've made changes to the website and would like to deploy them, follow these steps:
 
-1. Create a production build: `npm run build`
+1. Create a production build: `npm run build` or  `yarn run build`
 2. Deploy the build using your preferred platform:
    - For GitHub Pages: [GitHub Pages Deployment Guide](https://pages.github.com/)
 

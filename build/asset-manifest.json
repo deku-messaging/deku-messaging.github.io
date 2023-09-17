@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/deku-messaging.github.io/static/css/main.00814845.css",
+    "main.js": "/deku-messaging.github.io/static/js/main.2f9d11de.js",
+    "static/media/1.jpg": "/deku-messaging.github.io/static/media/1.059f07af1306c3f68d3b.jpg",
+    "static/media/Skai.png": "/deku-messaging.github.io/static/media/Skai.d9bfb98c8aa7573531a6.png",
+    "index.html": "/deku-messaging.github.io/index.html",
+    "main.00814845.css.map": "/deku-messaging.github.io/static/css/main.00814845.css.map",
+    "main.2f9d11de.js.map": "/deku-messaging.github.io/static/js/main.2f9d11de.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00814845.css",
+    "static/js/main.2f9d11de.js"
+  ]
+}

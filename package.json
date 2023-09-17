@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/deku-messaging/deku-messaging.github.io",
+  "homepage": "https://github.com/deku-messaging.github.io",
   "name": "deku-messaging-app",
   "version": "0.1.0",
   "private": true,
@@ -20,7 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "echo Replace this with your deployment command"
+    "predeploy": "yarn build",
+    "deploy": "yarn run deploy"
   },
   "eslintConfig": {
     "extends": [

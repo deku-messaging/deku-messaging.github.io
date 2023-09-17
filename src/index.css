@@ -1,152 +1,4 @@
 
-hr {
-  background: gold;
-  height: 0.30rem;
-  width: 15.25rem;
-  border: none;
-  border-radius:20%;
-  margin: 1rem 0 2.5rem 0;
-  padding-left: 30px;
-  color:goldenrod;
-}
-
-
-
-  /* =========================================================== */
-/* ---=============== HERO PAGE ======================-------------- */
-  /* ========================================================== */
-/* 
-  .more {
-    padding: 150px;
-    background: white;
-    display: flex !important;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 80px;
-    height: 90vh;
-  }
-  
-  .more > div span {
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-size: 1.5rem;
-    color: #787373;
-  }
-  
-  .more > div h4 {
-    text-transform: capitalize;
-    letter-spacing: 0.8px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-size: 2.5rem;
-    background-color: #081f63;
-    background-image: linear-gradient(45deg, #005baa, #544e4e);
-    background-size: 100%;
-    padding-left: 30px;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .more > div hr {
-    display: block;
-    background:  #f7a400;
-    height: 0.50rem;
-    width: 10.25rem;
-    border: none;
-    border-radius:50%;
-    margin: 1rem 0 1.5rem 0;
-    padding-left: 30px;
-
-  }
-  
-  .more > div p {
-    line-height: 1.6;
-    color: rgb(129, 129, 129);
-    margin-bottom: 1.5rem;
-  }
-  
-  .more a, .link-btn {
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #f4eeee;
-    font-weight: 600;
-    border-radius: 3.125rem;
-    padding: 0.5rem 1.5rem;
-    transition: 0.3s ease-in-out;
-    border: 0.125rem solid #005baa;
-  }
-  
-  .more  a:hover, .link-btn:hover {
-    border: 2px solid #c2c2c2;
-    background-color: #f7a400;
-    color:#000066;
-  }
-  
-  
-  .more .img-fluid {
-    max-width: 100%;
-    height: auto;
-    padding-right: 0;
-    margin-bottom: 90px;
-
-  }
-
-  
-  @media screen and (max-width: 768px) {
-    .more {
-      display: block !important;
-      width: 100%;
-      padding: 2rem 1rem;
-    }
-  
-    .more > div span {
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      font-size: 1.3rem;
-      color: #787373;
-    }
-  
-    .more > div h4 {
-      padding-top: 5px;
-      text-transform: capitalize;
-      letter-spacing: 0.8px;
-      font-family: "Roboto", sans-serif;
-      font-weight: 600; 
-      font-size: 1.6rem; 
-      background-color: #081f63;
-      background-image: linear-gradient(45deg, #005baa, #201f1f);
-    }
-  
-    .more > div {
-      flex-basis: 100%;
-      margin-bottom: 1.5rem;
-    }
-
-    .more a, .link-btn {
-      display: inline-block;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #f4eeee;
-      font-weight: 400;
-      border-radius: 3.125rem;
-      padding: 0.5rem 1.5rem;
-      transition: 0.3s ease-in-out;
-      border: 0.125rem solid #005baa;
-      font-size: 12px;
-    }
-  }
-   */
-
-/* =========================================================== */
-/* ---===============END OF HERO PAGE ======================-------------- */
-
-
-
-
-
-
 /* ========================================================== */
 /* ========================================================= */
 /* ============ ABOUT SECTION START HERE ==================== */
@@ -225,7 +77,6 @@ text-align: center;
     bottom: -50px;
     width: 200px;
     height: 299px;
-    /* background: url("./assets/1.jpg") no-repeat; */
     border-radius:20px;
 }
 
@@ -326,6 +177,54 @@ text-align: center;
  }
 
 
+ /* =======MEDIA QUERY========== */
+@media screen and (max-width: 768px) {
+  .about-section .content-column .inner-column {
+    padding-right: 0;
+  }
+
+  .about-section .image-column .inner-column {
+    padding: 10px; 
+    margin-left: 0; 
+    padding-bottom: 1px;
+
+  }
+
+  .about-section .image-column .inner-column:after {
+    display: none; 
+  }
+
+  .about-section .image-column .inner-column .image .overlay-box .year-box {
+    padding-left: 0; 
+  }
+
+  .theme-btn.btn-style-three {
+    padding: 10px 30px;
+  }
+
+  .sec-title .title {
+    padding-left: 20px; 
+    font-size: 18px;
+  }
+
+  .sec-title .title:before {
+    bottom: 4px; 
+  }
+
+  .sec-title .about-text {
+    padding-left: 25px; 
+    font-weight:700;
+  }
+
+}
+
+ /* ================================================================================ */
+/* --------------------===========END OF ABOUT SECTION ==========--------------- */
+/* ================================================================================== */
+
+
+
+
 /* ================================================================================ */
 /* --------------------=========== FEATURES STYLING SECTION ==========--------------- */
 /* ================================================================================== */
@@ -337,12 +236,12 @@ text-align: center;
 
 .feature-title h2 {
   position: relative;
-  margin-bottom: 20px; /* Reduce margin */
+  margin-bottom: 20px; 
   display: inline-block;
   font-weight: 600;
   line-height: 1;
-  color: #000000;
-  font-size: 28px; /* Adjust font size */
+  color: #e8a83a;
+  font-size: 28px; 
 }
 
 .feature-title h2::before {
@@ -351,31 +250,31 @@ text-align: center;
   left: 0;
   width: 60px;
   height: 2px;
-  background: #e8bc00;
-  bottom: -15px; /* Reduce bottom position */
+  background: #242323;
+  bottom: -15px; 
   margin: auto;
   right: 0;
 }
 
 .feature-title p {
-  padding: 0 20px; /* Reduce padding */
+  padding: 0 20px; 
   margin-bottom: 10px;
   color: #38383a;
-  font-size: 16px; /* Adjust font size */
+  font-size: 16px; 
 }
 
 .feature-icon {
-  font-size: 36px; /* Adjust font size */
+  font-size: 36px;
   color: #e8bc00;
-  margin-bottom: 10px; /* Reduce margin */
+  margin-bottom: 10px; 
   display: inline-block;
 }
 
 .feature-wrap {
   border: 1px solid #e6e6e6;
-  padding: 30px 20px; /* Reduce padding */
+  padding: 30px 20px;
   position: relative;
-  margin-bottom: 30px; /* Add margin between feature points */
+  margin-bottom: 30px; 
   text-align: center;
   border-radius:20px;
 }
@@ -383,14 +282,14 @@ text-align: center;
 .feature-wrap p {
   position: relative;
   color: #38383a;
-  font-size: 14px; /* Adjust font size */
+  font-size: 14px; 
 }
 
 .feature-wrap h4 {
   font-weight: 600;
   color: #1e2331;
-  margin-bottom: 10px; /* Reduce margin */
-  font-size: 16px; /* Adjust font size */
+  margin-bottom: 10px;
+  font-size: 16px; 
   text-transform: capitalize;
   position: relative;
 }
@@ -401,8 +300,9 @@ text-align: center;
   position: relative;
   color: #e8bc00;
 }
-
-
+/* ================================================================================ */
+/* --------------------===========END OF FEATURE SECTION ==========--------------- */
+/* ================================================================================== */
 
 
 
@@ -411,14 +311,8 @@ text-align: center;
 /* ================================================================================ */
 /* --------------------===========FOOTER STYLING SECTION ==========--------------- */
 /* ================================================================================== */
-
-
-
   /* FOOTER */
 
-
-
-  /*  Footer css */
   .element-btn .element-fill-btn {
     background-color: #ff6600;
     border: 0;
@@ -705,4 +599,41 @@ text-align: center;
 
 .btn-slide span.title-hover, .btn-slide2 span.title-hover2 {
   color: #fff;
+}
+
+/* ================================================================================ */
+/* --------------------===========END OF FOOTER SECTION ==========--------------- */
+/* ================================================================================== */
+
+/* Media query */
+@media screen and (max-width: 768px) {
+  .element-btn .element-fill-btn,
+  .fill-btn {
+    width: 100%; 
+    margin: 10px 0; 
+    position: static; 
+    transform: none;
+  }
+
+  .footer {
+    padding: 20px 0; 
+  }
+
+  .fTitle {
+    margin-bottom: 10px; 
+    font-size: 16px;
+  }
+
+  .contact-address ul li,
+  .contact-address ul li a {
+    font-size: 12px; 
+    margin-bottom: 10px; 
+    line-height: 20px; 
+  }
+
+  .social-icons ul li {
+    line-height: 30px; 
+    margin-right: 28px; 
+  }
+
 }

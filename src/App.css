@@ -10,7 +10,91 @@ body {
   color: #555;
   font-weight: 400;
 }
+
    
+
+
+
+
+
+
+
+  /* ============================================================== */
+ /* =========================================================== */
+/* ---=============== NAVBAR ======================-------------- */
+  /* ========================================================== */
+
+  .nav-icon-button {
+    color: #cf711f !important;
+    font-size: 1rem;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border:1px solid #ab9f94 !important;
+  }
+  
+  .nav-icon-button:hover {
+    color: #d0cbc7 !important;
+    cursor: pointer;
+  background-color:#cf711f !important;  
+  }
+  
+  .margin-left-btn {
+    margin-right: 2.4rem;
+  
+  }
+  
+  .nav-icon-button:focus {
+    outline: none;
+  }
+  
+  .navbar-shadow {
+    box-shadow: 0 2px 4px rgba(47, 45, 45, 0.1);
+  }
+  
+  .nav-link {
+    font-size: 15px !important;
+    transition: color 0.3s, background-color 0.3s;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-left: 20px;
+  }
+  
+  .nav-link:hover {
+    color: #ffc107 !important;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 5px; 
+  }
+  
+  
+   .navbar {
+    background-color: #333;
+    padding: 8px 0;
+    transition: background-color 0.3s;
+  }
+  
+  .custom-navbar {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  
+  .custom-navbar:not(.navbar-transparent) {
+    opacity: 1;
+  }
+  .margin-left-logo{
+    margin-left: 4.4rem ;
+  }
+  /* ========================================= */
+  /*========== END OF NAVBAR SECTION========== */
+  /* ---------------------------------------- */
+  
+
+
+
+/* ================================================================================ */
+/* --------------------===========HERO STYLING SECTION ==========--------------- */
+/* ================================================================================== */
   .section-hero {
     background-image: url(./assets/1.jpg);
     padding: 8.4rem 0 9.6rem 0;
@@ -18,7 +102,6 @@ body {
   
   .hero {
     max-width: 130rem;
-    /* display: grid; */
     grid-template-columns: 1fr 1fr;
     padding: 0 3.2rem;
     margin: 0 auto;
@@ -85,7 +168,6 @@ body {
     box-shadow: inset 0px 0px 0px 3px #fff;
     text-decoration: none;
     color:white !important;
-
   }
   
   .margin-right-btn {
@@ -115,90 +197,44 @@ body {
     color: #cf711f;
   }
 
+/* ================================================================================ */
+/* --------------------===========FEND OF HERO STYLING SECTION ==========--------------- */
+/* ================================================================================== */
 
 
 
 
+/* Media query */
+@media screen and (max-width: 768px) {
 
+  .nav-link {
+    margin-left: 0; 
+    padding: 5px 10px;
+    font-size: 14px;
+  }
 
+  .section-hero {
+    padding: 50px 0; 
+  }
 
+  .heading-primary {
+    font-size: 1.8rem; 
+    margin-top: 2rem; 
+  }
 
+  .hero-description {
+    font-size: 1rem; 
+  }
 
+  .hero-btns {
+    margin-left: 0; 
+    padding: 5px 10px;
+    font-size: 14px;
+  }
 
-
-
-
-
-
-
-
-  /* ============================================================== */
- /* =========================================================== */
-/* ---=============== NAVBAR ======================-------------- */
-  /* ========================================================== */
-
-.nav-icon-button {
-  color: #cf711f !important;
-  font-size: 1rem;
-  padding: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-  border:1px solid #ab9f94 !important;
+  .btn {
+    font-size: 12px !important; 
+    padding:10px !important; 
+    margin-top: 20px;
+  }
 }
-
-.nav-icon-button:hover {
-  color: #d0cbc7 !important;
-  cursor: pointer;
-background-color:#cf711f !important;  
-}
-
-.margin-left-btn {
-  margin-right: 2.4rem;
-
-}
-
-.nav-icon-button:focus {
-  outline: none;
-}
-
-.navbar-shadow {
-  box-shadow: 0 2px 4px rgba(47, 45, 45, 0.1);
-}
-
-.nav-link {
-  font-size: 15px !important;
-  transition: color 0.3s, background-color 0.3s;
-  cursor: pointer;
-  padding: 10px 15px;
-  margin-left: 20px;
-}
-
-.nav-link:hover {
-  color: #ffc107 !important;
-  background-color: rgba(255, 255, 255, 0.1); 
-  border-radius: 5px; 
-}
-
-
- .navbar {
-  background-color: #333;
-  padding: 8px 0;
-  transition: background-color 0.3s;
-}
-
-.custom-navbar {
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
-.custom-navbar:not(.navbar-transparent) {
-  opacity: 1;
-}
-.margin-left-logo{
-  margin-left: 4.4rem;
-
-}
-/* ========================================= */
-
-/* ---------------------------------------- */

@@ -1,0 +1,35 @@
+name: React CI/CD with Yarn
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js and Yarn
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          registry-url: 'https://registry.yarnpkg.com/'
+
+      - name: Install dependencies with Yarn
+        run: yarn install
+
+      - name: Build with Yarn
+        run: yarn build
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@users.noreply.github.com"
+          yarn global add gh-pages
+          gh-pages -d build
+        env:
+          CI: true

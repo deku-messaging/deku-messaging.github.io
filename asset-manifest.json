@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/deku-messaging.github.io/static/css/main.f068b21b.css",
-    "main.js": "/deku-messaging.github.io/static/js/main.3852a52b.js",
-    "static/media/1.jpg": "/deku-messaging.github.io/static/media/1.059f07af1306c3f68d3b.jpg",
-    "static/media/Skai.png": "/deku-messaging.github.io/static/media/Skai.d9bfb98c8aa7573531a6.png",
-    "index.html": "/deku-messaging.github.io/index.html",
-    "main.f068b21b.css.map": "/deku-messaging.github.io/static/css/main.f068b21b.css.map",
-    "main.3852a52b.js.map": "/deku-messaging.github.io/static/js/main.3852a52b.js.map"
+    "main.css": "/static/css/main.a4774eb6.css",
+    "main.js": "/static/js/main.b40179d3.js",
+    "static/media/1.jpg": "/static/media/1.059f07af1306c3f68d3b.jpg",
+    "static/media/Skai.png": "/static/media/Skai.d9bfb98c8aa7573531a6.png",
+    "index.html": "/index.html",
+    "main.a4774eb6.css.map": "/static/css/main.a4774eb6.css.map",
+    "main.b40179d3.js.map": "/static/js/main.b40179d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.f068b21b.css",
-    "static/js/main.3852a52b.js"
+    "static/css/main.a4774eb6.css",
+    "static/js/main.b40179d3.js"
   ]
 }
